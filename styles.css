@@ -1,0 +1,101 @@
+   body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #28313B, #485461);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+  }
+  
+  .stopwatch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stopwatch {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 10px solid #4caf50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #333, #222);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .time-display {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+  }
+  
+  .controls {
+    position: absolute;
+    bottom: -60px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  #start-stop {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  #lap {
+    background-color: #f39c12;
+    color: #fff;
+  }
+  
+  #reset {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .laps {
+    margin-top: 40px;
+    text-align: left;
+    width: 250px;
+  }
+  
+  .laps ul {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #555;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .laps li {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #777;
+    color: #ddd;
+  }
+  
